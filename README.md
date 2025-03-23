@@ -37,7 +37,7 @@ sudo luarocks install lunajson
 
 4. Install [yfinance](https://pypi.org/project/yfinance/).
 
-5. Run the following script to clone this repository and install dependencies:
+5. Run the following script to clone this repository and install dependencies. Note: you may need to run the script twice for everything to install properly.
 
 ```bash
 sudo curl -L https://raw.githubusercontent.com/TheGoldenPatrik1/sketchybar-config/main/scripts/install.sh | sh
@@ -59,6 +59,7 @@ The default configuration values are defined in full [here](settings.lua). You m
 
 | Name | Type | Default | Description |
 | ---- | ---- | ---- | ---- |
+| `bar_height` | `integer` | `40` | The height of the bar. |
 | `calendar.click_script` | `string` | `open -a Calendar` | Script to run when the Calendar Widget gets clicked. |
 | `clipboard.max_items` | `integer` | `5` | Number of items to save in the Clipboard Widget. |
 | `font` | `object` | [helpers/default_font.lua](helpers/default_font.lua) | Font configuration. |

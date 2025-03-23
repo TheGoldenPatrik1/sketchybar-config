@@ -5,6 +5,7 @@ local tbl = require("utils.tbl")
 
 local function load_config()
     local config = {
+        bar_height = 40,
         calendar = {
             click_script = "open -a Calendar"
         },
