@@ -169,7 +169,10 @@ local function pull_stock_data()
 end
 
 refresh_popup:subscribe("mouse.clicked", pull_stock_data)
-stocks:subscribe({"routine", "forced", "system_woke"}, pull_stock_data)
+stocks:subscribe({"routine", "forced", "system_woke"}, function()
+    loading = false
+    pull_stock_data()
+end)
 
 local function show_popup()
     stocks:set({ popup = { drawing = "toggle" } })
