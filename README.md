@@ -51,6 +51,8 @@ brew services restart sketchybar
 
 7. Go to "Settings" -> "Control Center" -> "Automatically hide and show the menu bar" and change its value to "Always."
 
+**Note**: to get the most out of this configuration, it is also recommended to install [yabai](https://github.com/koekeishiya/yabai).
+
 ## Configuration
 
 The default configuration values are defined in full [here](settings.lua). You may overwrite any or all of them by creating a `config.json` file in the root directory of the project.

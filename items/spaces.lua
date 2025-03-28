@@ -79,7 +79,7 @@ for i = 1, 10, 1 do
   end)
 
   space:subscribe("mouse.clicked", function(env)
-    if env.BUTTON == "other" then
+    if env.BUTTON == "other" or env.MODIFIER == "shift" then
       space_popup:set({ background = { image = "space." .. env.SID } })
       space:set({ popup = { drawing = "toggle" } })
     else
